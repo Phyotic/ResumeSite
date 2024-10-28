@@ -1,0 +1,38 @@
+.projects-content h1 {
+    text-align: center;
+    font-size: calc(2rem + 1vw);
+}
+
+.projects-ul {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+/*TODO: Delete. Project mock.*/
+.projects-ul li {
+    width: 300px;
+    height: 40vh;
+    list-style-type: none;
+
+    border: 1px solid orange;
+}
+
+@media screen and (min-width: 700px) {
+    .projects-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .projects-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .projects-ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}

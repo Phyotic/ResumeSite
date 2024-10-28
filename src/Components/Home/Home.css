@@ -1,0 +1,37 @@
+.profile-section h1,
+.profile-section h2 {
+    text-align: center;
+}
+
+.profile-section img {
+    display: block;
+    margin: auto;
+
+    border: 1px solid green;
+}
+
+.profile-section .info-text {
+}
+
+.profile-section .latest-text {
+}
+
+@media screen and (min-width: 700px) {
+    #home-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #profile-body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        order: 1;
+    }
+
+    #profile-body .latest-text {
+        order: 2;
+    }
+}
