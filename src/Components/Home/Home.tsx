@@ -1,5 +1,6 @@
 import Nav from "../Nav/Nav";
 import "./Home.css";
+import profilePic from "../../../public/profile-pic.jpg";
 
 function Home() {
     return (
@@ -7,24 +8,31 @@ function Home() {
             <Nav />
             <section className="profile-section">
                 <h1>Profile</h1>
-                <h2>Some Quick Info</h2>
                 <hr />
 
                 <section id="profile-body">
-                    <img src="" alt="Profile Image" width={300} height={300} />
-                    <p className="info-text">
-                        INFORMATION: (About Me) - Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Odio aspernatur neque nobis incidunt excepturi
-                        reiciendis nesciunt, repellat modi veniam consectetur
-                        exercitationem, iste soluta atque repudiandae nihil tempore culpa
-                        alias officia?
-                    </p>
+                    <img
+                        id="profile-pic"
+                        src={profilePic}
+                        alt="Profile Image"
+                        width={200}
+                        height={200}
+                    />
+                    <section className="info-text">
+                        <h2>Daniel Solorzano</h2>
+                        <h3>Chicago, Illinois</h3>
+                        <h4>Future Software Engineer</h4>
+                    </section>
 
                     <p className="latest-text">
-                        LATEST: (Name, Age, Location) Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Libero, et. Distinctio unde natus
-                        alias, eos sequi deleniti officia facilis hic dolore voluptatum
-                        exercitationem est quasi numquam ratione, fugit culpa commodi.
+                        Graduated with a bachelor's in Computer Science. I'm a lifelong
+                        student with a deep passion for all things computer science. My
+                        personal goal is to become a full-stack developer with some strong
+                        cloud expertise. Right now, I'm focused on advancing my front-end
+                        skills by building websites and incorporating new technologies
+                        into each project—like using React Router to enhance this very
+                        site. I'm also currently preparing for the AWS Solutions Architect
+                        exam to strengthen my cloud knowledge.
                     </p>
                 </section>
             </section>
