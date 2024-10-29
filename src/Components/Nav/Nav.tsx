@@ -5,13 +5,13 @@ function Home() {
     return (
         <nav className="nav-menu">
             <ul>
-                <Link to={"/"}>
+                <Link to={"/"} className="rr-link">
                     <li>Home</li>
                 </Link>
-                <Link to={"/projects"}>
+                <Link to={"/projects"} className="rr-link">
                     <li>Projects</li>
                 </Link>
-                <Link to={"/about"}>
+                <Link to={"/about"} className="rr-link">
                     <li>About</li>
                 </Link>
             </ul>

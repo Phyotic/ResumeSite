@@ -1,26 +1,45 @@
 nav {
-    border: 1px solid red;
+    position: sticky;
+    top: 0;
+    margin-bottom: 5vh;
 }
 
 .nav-menu ul {
     display: flex;
     justify-content: space-around;
+
+    text-align: center;
 }
 
 .nav-menu li {
     list-style-type: none;
     display: flex;
 
-    width: 33vw;
-
-    border: 1px solid blue;
+    padding: 3vh 0vw;
 }
 
-link {
+.rr-link {
     width: 100%;
 }
 
+.rr-link li {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: calc(1rem + 3vw);
+}
+
 @media screen and (min-width: 700px) {
+    nav {
+        margin: 0;
+    }
+
     .nav-menu {
         height: 100vh;
         display: flex;
@@ -37,5 +56,6 @@ link {
         height: 30vh;
         writing-mode: vertical-rl;
         font-size: calc(1rem + 1vh);
+        width: 10vw;
     }
 }
