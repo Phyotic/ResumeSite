@@ -55,7 +55,7 @@ a {
         align-items: center;
         height: 30vh;
         writing-mode: vertical-rl;
-        font-size: calc(1rem + 1vh);
+        font-size: calc(1rem + 1.5vw);
         width: 10vw;
     }
 }
