@@ -1,0 +1,125 @@
+.content {
+    padding: 0vh 3vw;
+}
+
+.page-header {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+.update-date {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+section h1 {
+    font-size: 1.5rem;
+}
+
+.working-on-status,
+.certifications,
+.skill-set {
+    margin: 3vh 0vw;
+}
+
+.certifications ul,
+.skill-set ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.working-on-status p,
+.certifications ul li,
+.skill-set ul li {
+    font-size: 1.2rem;
+    margin: 1vh 0vw;
+}
+
+.working-on-status h1 ~ p,
+.certifications h1 ~ ul,
+.skill-set h1 ~ ul {
+    margin-left: 3vw;
+}
+
+.skill-set ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skill-set ul li {
+    padding: 0.3rem;
+    color: var(--secondary-color);
+    border: 3px solid var(--main-color);
+    margin: 1vh 1vw;
+}
+
+.links {
+    padding: 1vh 0;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links ul li {
+    display: flex;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+    .about-page {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+    }
+
+    .content {
+        padding: 0vh 15vw 3vh;
+    }
+
+    .page-header {
+        font-size: calc(2rem + 3vw);
+        padding: 3vh 0vw;
+    }
+
+    .working-on-status,
+    .certifications,
+    .skill-set {
+        display: flex;
+        flex-direction: column;
+        margin: 5vh 0vw;
+    }
+
+    section h1 {
+        margin-bottom: 3vh;
+        font-size: clamp(1rem, calc(1rem + 1vw), 3rem);
+    }
+
+    .update-date {
+        text-align: left;
+        opacity: 0.5;
+    }
+
+    .content-container footer {
+        padding: 5vh 3vw;
+    }
+}
