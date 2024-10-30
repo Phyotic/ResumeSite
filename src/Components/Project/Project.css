@@ -1,0 +1,43 @@
+.card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 40vh;
+}
+
+.card-img-container {
+    display: flex;
+    flex: 0 0 40%;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 60%;
+    padding: 0 2vw;
+}
+
+.card-bottom h1 {
+    padding: 1vh 0vw;
+    text-align: left;
+    font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+.card-bottom p {
+    padding: 1vh 0vw;
+}
+
+.card-bottom a {
+    font-size: 1rem;
+    padding: 2vh 0vw;
+}
