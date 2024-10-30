@@ -1,6 +1,7 @@
 .projects-content h1 {
     text-align: center;
-    font-size: calc(2rem + 1vw);
+    font-size: 2rem;
+    padding-bottom: 3vh;
 }
 
 .projects-ul {
@@ -11,11 +12,11 @@
 
 /*TODO: Delete. Project mock.*/
 .projects-ul li {
-    width: 300px;
-    height: 40vh;
     list-style-type: none;
-
-    border: 1px solid orange;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+    max-width: clamp(300px, 90%, 500px);
 }
 
 @media screen and (min-width: 700px) {
@@ -28,6 +29,11 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    .projects-content h1 {
+        font-size: calc(2rem + 3vw);
+        padding: 3vh 0px;
     }
 
     .projects-ul {

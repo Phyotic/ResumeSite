@@ -1,5 +1,6 @@
 import Nav from "../Nav/Nav";
 import "./Projects.css";
+import Project from "../Project/Project";
 
 function Projects() {
     return (
@@ -11,22 +12,28 @@ function Projects() {
 
                 <ul className="projects-ul">
                     <li>
-                        <p>Placeholder project</p>
+                        <Project></Project>
                     </li>
                     <li>
-                        <p>Placeholder project</p>
+                        <Project></Project>
                     </li>
                     <li>
-                        <p>Placeholder project</p>
+                        <Project></Project>
                     </li>
                     <li>
-                        <p>Placeholder project</p>
+                        <Project></Project>
                     </li>
                     <li>
-                        <p>Placeholder project</p>
+                        <Project></Project>
                     </li>
                     <li>
-                        <p>Placeholder project</p>
+                        <Project></Project>
+                    </li>
+                    <li>
+                        <Project></Project>
+                    </li>
+                    <li>
+                        <Project></Project>
                     </li>
                 </ul>
             </section>
