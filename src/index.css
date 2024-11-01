@@ -6,6 +6,24 @@
 
 :root {
     --smallBP: 700px;
-    --main-color: rgb(141, 116, 240);
-    --secondary-color: rgb(79, 215, 224);
+    --color-1: rgb(141, 116, 240);
+    --color-2: rgb(79, 215, 224);
+    --color-3: rgb(35, 30, 57, 1);
+    --color-4: rgb(40, 34, 63, 1);
+    --white-var: rgb(229, 229, 229);
+    --black-var: rgb(18, 18, 18);
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(var(--color-1), var(--color-4) 40%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        background: linear-gradient(to left, var(--color-1), var(--color-4) 50%);
+    }
 }
