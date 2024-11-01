@@ -31,7 +31,7 @@ function Home() {
                         cloud expertise. Right now, I'm focused on advancing my front-end
                         skills by building websites and incorporating new technologies
                         into each project—like using React Router to enhance this very
-                        site. I'm also currently preparing for the AWS Solutions Architect
+                        site! I'm also currently preparing for the AWS Solutions Architect
                         exam to strengthen my cloud knowledge.
                     </p>
                 </section>
