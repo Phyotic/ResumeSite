@@ -16,13 +16,12 @@
 
 body {
     min-height: 100vh;
-    width: 100vw;
     background: linear-gradient(var(--color-1), var(--color-4) 40%);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: var(--smallBP)) {
     body {
         background: linear-gradient(to left, var(--color-1), var(--color-4) 50%);
     }
