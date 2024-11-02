@@ -29,7 +29,6 @@
     .projects-content {
         display: flex;
         flex-direction: column;
-        width: 100%;
     }
 
     .projects-content h1 {
