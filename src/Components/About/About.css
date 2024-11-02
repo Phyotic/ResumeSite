@@ -1,3 +1,7 @@
+.about-page {
+    height: 100%;
+}
+
 .content {
     padding: 0vh 3vw;
 }
@@ -6,12 +10,15 @@
     font-size: 2rem;
     text-align: center;
     padding-bottom: 3vh;
+    color: var(--white-var);
 }
 
 .update-date {
     text-transform: uppercase;
     font-size: 1rem;
     font-style: italic;
+
+    color: var(--color-1);
 }
 
 section h1 {
@@ -22,6 +29,8 @@ section h1 {
 .certifications,
 .skill-set {
     margin: 3vh 0vw;
+
+    color: var(--color-2);
 }
 
 .certifications ul,
@@ -42,6 +51,8 @@ section h1 {
 .certifications h1 ~ ul,
 .skill-set h1 ~ ul {
     margin-left: 3vw;
+
+    color: var(--white-var);
 }
 
 .skill-set ul {
@@ -50,10 +61,12 @@ section h1 {
 }
 
 .skill-set ul li {
-    padding: 0.3rem;
-    color: var(--secondary-color);
-    border: 3px solid var(--main-color);
+    padding: 1rem;
+    color: var(--white-var);
+    border: 1px solid var(--color-1);
     margin: 1vh 1vw;
+
+    background-color: var(--color-3);
 }
 
 .links {
@@ -78,6 +91,14 @@ section h1 {
 
 .links a {
     text-decoration: none;
+
+    color: var(--color-2);
+    border: 2px solid var(--color-2);
+    border-radius: 50%;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: center;
+    align-content: center;
 }
 
 @media screen and (min-width: 700px) {
