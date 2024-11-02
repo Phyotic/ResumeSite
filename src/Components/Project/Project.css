@@ -25,6 +25,10 @@
     flex-direction: column;
     flex: 1;
     padding: 0 2vw;
+
+    color: var(--white-var);
+
+    background: linear-gradient(var(--color-3) 50%, var(--color-4));
 }
 
 .card-bottom h1 {

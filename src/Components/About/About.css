@@ -6,6 +6,10 @@
     padding: 0vh 3vw;
 }
 
+.content h1 {
+    color: var(--color-2);
+}
+
 .page-header {
     font-size: 2rem;
     text-align: center;
