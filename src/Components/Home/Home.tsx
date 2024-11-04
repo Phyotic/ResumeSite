@@ -1,6 +1,6 @@
 import Nav from "../Nav/Nav";
 import "./Home.css";
-import profilePic from "../../../public/default-profile-pic.svg";
+import profilePic from "/default-profile-pic.svg";
 import { SiteData } from "../../SiteData";
 
 type HomeProps = {
@@ -11,7 +11,7 @@ function Home({ data }: HomeProps) {
     let picUrl: string = profilePic;
 
     if (data != null) {
-        picUrl = "../../../public/" + data.home["profile-pic"];
+        picUrl = "/" + data.home["profile-pic"];
     }
 
     return data == null ? (

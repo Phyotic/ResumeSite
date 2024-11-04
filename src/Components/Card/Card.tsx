@@ -10,7 +10,7 @@ function Card({ card }: CardProps) {
         <section className="card-container">
             <img
                 className="card-cover-image"
-                src={"../../../public/" + card.cover}
+                src={"/" + card.cover}
                 alt={card.header}
             ></img>
 

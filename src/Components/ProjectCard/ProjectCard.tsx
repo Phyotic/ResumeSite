@@ -11,7 +11,7 @@ function ProjectCard({ project: Project }: ProjectProps) {
             <section className="card-img-container">
                 <img
                     className="card-img"
-                    src={"../../../public/" + Project.image}
+                    src={"/" + Project.image}
                     alt={Project.name}
                 ></img>
             </section>
@@ -34,7 +34,7 @@ function ProjectCard({ project: Project }: ProjectProps) {
                         <a className="project-link" href={Project["github-url"]}>
                             <img
                                 className="project-link-img"
-                                src="../../../public/github-icon.svg"
+                                src="/github-icon.svg"
                             ></img>
                         </a>
                     )}
@@ -43,7 +43,7 @@ function ProjectCard({ project: Project }: ProjectProps) {
                         <a className="project-link" href={Project["site-url"]}>
                             <img
                                 className="project-link-img"
-                                src="../../../public/website-icon.svg"
+                                src="/website-icon.svg"
                             ></img>
                         </a>
                     )}
