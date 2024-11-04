@@ -10,9 +10,9 @@
         {
             "name": "Resume Website",
             "description": "A personal website to showcase my projects, technical skills, computer science interests, and my reading list. Features an 'About Me' section and serves as a central hub for my professional portfolio.",
-            "image": "cocktail-bartender-site.jpg",
+            "image": "resume-site.PNG",
             "github-url": "https://github.com/Phyotic/ResumeSite",
-            "site-url": "www.google.com",
+            "site-url": "",
             "tech-used": [
                 "HTML",
                 "CSS",
