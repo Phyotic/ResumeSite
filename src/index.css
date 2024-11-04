@@ -19,6 +19,8 @@ body {
     background: linear-gradient(var(--color-1), var(--color-4) 40%);
     background-size: 100%;
     background-repeat: no-repeat;
+
+    font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (min-width: var(--smallBP)) {
