@@ -1,8 +1,28 @@
 import Nav from "../Nav/Nav";
 import "./Projects.css";
-import Project from "../Project/Project";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import { SiteData, Project as ProjectData } from "../../SiteData";
 
-function Projects() {
+type ProjectProps = {
+    data: SiteData | null;
+};
+
+function Projects({ data }: ProjectProps) {
+    let projectList: ProjectData[] = [
+        {
+            name: "Error",
+            description: "No projects found",
+            image: "",
+            "github-url": "/",
+            "site-url": "/",
+            "tech-used": [],
+        },
+    ];
+
+    if (data != null) {
+        projectList = data.projects;
+    }
+
     return (
         <section className="projects-container">
             <Nav />
@@ -11,30 +31,13 @@ function Projects() {
                 <h1>Projects</h1>
 
                 <ul className="projects-ul">
-                    <li>
-                        <Project></Project>
-                    </li>
-                    <li>
-                        <Project></Project>
-                    </li>
-                    <li>
-                        <Project></Project>
-                    </li>
-                    <li>
-                        <Project></Project>
-                    </li>
-                    <li>
-                        <Project></Project>
-                    </li>
-                    <li>
-                        <Project></Project>
-                    </li>
-                    <li>
-                        <Project></Project>
-                    </li>
-                    <li>
-                        <Project></Project>
-                    </li>
+                    {projectList.map((project) => {
+                        return (
+                            <li key={project.name}>
+                                <ProjectCard project={project}></ProjectCard>
+                            </li>
+                        );
+                    })}
                 </ul>
             </section>
         </section>
