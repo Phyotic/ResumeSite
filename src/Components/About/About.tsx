@@ -1,58 +1,90 @@
+import { SiteData } from "../../SiteData";
 import Nav from "../Nav/Nav";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import "./About.css";
+import Card from "../Card/Card";
 
-function About() {
-    return (
+type AboutProps = {
+    data: SiteData | null;
+};
+
+function About({ data }: AboutProps) {
+    return data == null ? (
+        <p> No data loaded.</p>
+    ) : (
         <section className="about-page">
             <Nav />
 
             <section className="content-container">
                 <section className="content">
                     <h1 className="page-header">About Me</h1>
-                    <h2 className="update-date">Updated on: Oct. 30, 2024</h2>
+                    <h2 className="update-date">Updated on: {data.updated}</h2>
 
                     <section className="working-on-status">
                         <h1>Currently Working On:</h1>
-                        <p>Reading the Book: abc by def</p>
-                        <p>Current project: abc</p>
-                        <p>Last LeetCode Problem: abc</p>
+                        <section className="current-project">
+                            <ProjectCard
+                                project={
+                                    data["about-me"]["working-on"]["current-project"]
+                                }
+                            ></ProjectCard>
+                        </section>
+
+                        <section className="books">
+                            <h1>Currently Reading:</h1>
+                            <section className="currently-reading">
+                                <Card
+                                    card={data["about-me"]["working-on"]["current-book"]}
+                                ></Card>
+                            </section>
+
+                            <h1>Books Read:</h1>
+                            <ul className="finished-reading">
+                                {data["about-me"]["working-on"]["past-read"].map(
+                                    (book) => {
+                                        return (
+                                            <li key={book.header}>
+                                                <Card card={book}></Card>
+                                            </li>
+                                        );
+                                    }
+                                )}
+                            </ul>
+                        </section>
                     </section>
 
                     <section className="certifications">
                         <h1>Certifications</h1>
-                        <ul>
-                            <li>AWS Cloud Practitioner</li>
-                            <li>Meta Front End Developer</li>
-                            <li>AWS Solutions Architect Prep</li>
+                        <ul className="certification-list">
+                            {data["about-me"].certifications.map((cert) => {
+                                return (
+                                    <li key={cert.header}>
+                                        <Card card={cert}></Card>
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </section>
 
                     <section className="skill-set">
                         <h1>Skills:</h1>
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>React Router</li>
-                            <li>TypeScript</li>
-                            <li>AWS</li>
-                            <li>Java</li>
+                            {data["about-me"].skills.sort().map((skill) => {
+                                return <li key={skill}>{skill}</li>;
+                            })}
                         </ul>
                     </section>
                 </section>
 
                 <footer className="links">
                     <ul>
-                        <li>
-                            <a href="/">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a href="/">GitHub</a>
-                        </li>
-                        <li>
-                            <a href="">LeetCode</a>
-                        </li>
+                        {data["about-me"].links.map((link) => {
+                            return (
+                                <li key={link.name}>
+                                    <a href={link.url}>{link.name}</a>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </footer>
             </section>
