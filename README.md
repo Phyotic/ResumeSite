@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Resume Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal website to showcase my projects, technical skills, computer science interests, and my reading list. Features an 'About Me' section and serves as a central hub for my professional portfolio.
 
-Currently, two official plugins are available:
+## Site Link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Hosted using AWS.
 
-## Expanding the ESLint configuration
+[TBD](www.google.com)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Features
 
-- Configure the top-level `parserOptions` property like this:
+-   Profile Summary
+-   List of projects, the tech used, and relevant links.
+-   Section describing my current project, reading list, certifications, skills, and socials.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+# Technologies Used
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+-   HTML
+-   CSS
+-   JavaScript/TypeScript
+-   Axios
+-   React
+-   React Router
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# Screenshots
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Landing page.
+<img src="https://i.imgur.com/6MZdBln.png">
+
+<hr>
+Projects Page.
+<img src="https://i.imgur.com/3tGkF09.png">
+<hr>
+About Page - reading section..
+<img src="https://i.imgur.com/adS1Lmg.png">
