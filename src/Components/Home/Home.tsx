@@ -1,9 +1,22 @@
 import Nav from "../Nav/Nav";
 import "./Home.css";
-import profilePic from "../../../public/profile-pic.jpg";
+import profilePic from "../../../public/default-profile-pic.svg";
+import { SiteData } from "../../SiteData";
 
-function Home() {
-    return (
+type HomeProps = {
+    data: SiteData | null;
+};
+
+function Home({ data }: HomeProps) {
+    let picUrl: string = profilePic;
+
+    if (data != null) {
+        picUrl = "../../../public/" + data.home["profile-pic"];
+    }
+
+    return data == null ? (
+        <p>"Loading..."</p>
+    ) : (
         <section id="home-container">
             <Nav />
             <section className="profile-section">
@@ -13,27 +26,18 @@ function Home() {
                 <section id="profile-body">
                     <img
                         id="profile-pic"
-                        src={profilePic}
+                        src={picUrl}
                         alt="Profile Image"
                         width={200}
                         height={200}
                     />
                     <section className="info-text">
-                        <h2>Daniel Solorzano</h2>
-                        <h3>Chicago, Illinois</h3>
-                        <h4>Future Software Engineer</h4>
+                        <h2>{data.home.name}</h2>
+                        <h3>{data.home.location}</h3>
+                        <h4>{data.home["job-title"]}</h4>
                     </section>
 
-                    <p className="latest-text">
-                        Graduated with a bachelor's in Computer Science. I'm a lifelong
-                        student with a deep passion for all things computer science. My
-                        personal goal is to become a full-stack developer with some strong
-                        cloud expertise. Right now, I'm focused on advancing my front-end
-                        skills by building websites and incorporating new technologies
-                        into each project—like using React Router to enhance this very
-                        site! I'm also currently preparing for the AWS Solutions Architect
-                        exam to strengthen my cloud knowledge.
-                    </p>
+                    <p className="latest-text">{data.home.description}</p>
                 </section>
             </section>
         </section>
