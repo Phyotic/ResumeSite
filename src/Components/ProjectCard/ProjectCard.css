@@ -1,0 +1,78 @@
+.card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+
+    height: 50vh;
+}
+
+.card-img-container {
+    display: flex;
+    overflow: hidden;
+
+    max-height: 20vh;
+
+    background-color: var(--color-4);
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    padding: 0 2vw;
+    color: var(--white-var);
+    background: linear-gradient(var(--color-3) 50%, var(--color-4));
+}
+
+.card-bottom h1 {
+    padding: 1vh 0vw;
+    text-align: left;
+    font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
+}
+
+.card-bottom p {
+    padding: 1vh 0vw;
+}
+
+.card-bottom a {
+    font-size: 1rem;
+}
+
+.tech-used {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p.project-tech {
+    border: 1px solid var(--color-2);
+    color: var(--color-2);
+    padding: 0.5rem 1rem;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-link:hover {
+    background-color: var(--color-2);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-position: 50% 50%;
+}
+
+.project-link-img {
+    width: 2rem;
+    height: 2rem;
+}
