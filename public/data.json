@@ -1,0 +1,212 @@
+{
+    "home": {
+        "name": "Daniel Solorzano",
+        "location": "Chicago, Illinois",
+        "job-title": "Future Software Engineer",
+        "profile-pic": "profile-pic.jpg",
+        "description": "Graduated with a bachelor's in Computer Science. I'm a lifelong student with a deep passion for all things computer science. My personal goal is to become a full-stack developer with some strong cloud expertise. Right now, I'm focused on advancing my front-end skills by building websites and incorporating new technologies into each project—like using React Router to enhance this very site! I'm also currently preparing for the AWS Solutions Architect exam to strengthen my cloud knowledge."
+    },
+    "projects": [
+        {
+            "name": "Resume Website",
+            "description": "A personal website to showcase my projects, technical skills, computer science interests, and my reading list. Features an 'About Me' section and serves as a central hub for my professional portfolio.",
+            "image": "cocktail-bartender-site.jpg",
+            "github-url": "https://github.com/Phyotic/ResumeSite",
+            "site-url": "www.google.com",
+            "tech-used": [
+                "HTML",
+                "CSS",
+                "TypeScript",
+                "React",
+                "React Router",
+                "JavaScript"
+            ]
+        },
+        {
+            "name": "Little Lemon",
+            "description": "Developed a dynamic web app for a fictional Mediterranean restaurant as part of the Meta Front End Development course. Tasked with designing and solving a non-existent reservation system for the client. Created a responsive home page using JavaScript, HTML, CSS, React, and React Router.",
+            "image": "little-lemon-site.png",
+            "github-url": "https://github.com/Phyotic/MetaFrontEndDevCourse",
+            "site-url": "https://d2mz2nxi2aix52.cloudfront.net/",
+            "tech-used": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "React Router",
+                "React Testing Library"
+            ]
+        },
+        {
+            "name": "Cocktail Bartender",
+            "description": "Built a cocktail lookup web app using TypeScript, JavaScript, HTML, CSS, React. Integrated thecocktaildb API to allow users to search for specific drinks or get random suggestions using Axios. Designed the app to be responsive for both desktop and mobile devices.",
+            "image": "cocktail-bartender-site.jpg",
+            "github-url": "https://github.com/Phyotic/Cocktail-Bartender",
+            "site-url": "https://d3l9zvygu2gpqq.cloudfront.net",
+            "tech-used": ["HTML", "CSS", "React", "TypeScript", "JavaScript", "Axios"]
+        },
+        {
+            "name": "TODO Web App",
+            "description": "Developed a ToDo list application using the React library with an intuitive interface. Implemented core functionalities such as creating, updating, deleting, and retrieving tasks.",
+            "image": "todo-site.png",
+            "github-url": "https://github.com/Phyotic/ReactTODO",
+            "site-url": "https://d1reeumq1tu0dn.cloudfront.net",
+            "tech-used": ["JavaScript", "HTML", "CSS", "React"]
+        },
+        {
+            "name": "TicTacToe Web App",
+            "description": "Created a TicTacToe application using the React library for local co-op play. Designed a clean and responsive user interface with score tracking. Heavily incorporated animations and transitions to provide a fun look and feel to further enhance user engagement.",
+            "image": "tictactoe-site.png",
+            "github-url": "https://github.com/Phyotic/react-tictactoe",
+            "site-url": "https://d38cxn61g5wmw1.cloudfront.net",
+            "tech-used": ["React", "JavaScript", "HTML", "CSS"]
+        },
+        {
+            "name": "Application Tracker",
+            "description": "Developed a web application for tracking job applications, implementing CRUD operations and RESTful architecture. Utilized JavaScript, HTML, CSS, Java, and Spring Boot to create a functional and efficient system.",
+            "image": "jht-site.png",
+            "github-url": "https://github.com/Phyotic/JHTracker",
+            "site-url": "",
+            "tech-used": ["HTML", "CSS", "JavaScript", "Java", "MySQL", "Spring Boot"]
+        },
+        {
+            "name": "Chomp Template Clone",
+            "description": "Recreated the front-end of the Chomp Template from Webflow with a focus on responsive UI design. Developed using JavaScript, HTML, and CSS. Used Java and the Spring Boot Framework for the back-end.",
+            "image": "chomp-clone-site.png",
+            "github-url": "https://github.com/Phyotic/chomp-clone",
+            "site-url": "",
+            "tech-used": ["HTML", "CSS", "JavaScript", "Java", "Spring Boot"]
+        },
+        {
+            "name": "Okalpha.co Clone",
+            "description": "Recreated the mobile UI of the Okalpha.co website using HTML, CSS, and JavaScript. Focused on accurately replicating the design for a responsive mobile experience.",
+            "image": "okalpha-clone-site.png",
+            "github-url": "https://github.com/Phyotic/OkalphaClone",
+            "site-url": "",
+            "tech-used": ["HTML", "CSS", "JavaScript"]
+        }
+    ],
+    "about-me": {
+        "working-on": {
+            "current-book": {
+                "header": "Spring In Action 6th Edition (2022)",
+                "sub-header": "Craig Walls",
+                "cover": "spring-in-action-6e-craig-walls.png"
+            },
+            "past-read": [
+                {
+                    "header": "CSS In Depth (2018)",
+                    "sub-header": "Keith J. Grant",
+                    "cover": "css-in-depth-keith-j-grant.jpg"
+                },
+                {
+                    "header": "Responsive Web Design With HTML5 and CSS 4th Edition (2022)",
+                    "sub-header": "Ben Frain",
+                    "cover": "responsive-web-design-with-html5-and-css-4e-ben-frain.jpg"
+                },
+                {
+                    "header": "JavaScript From Beginning to Professional (2021)",
+                    "sub-header": "Laurence Lars Svekis, Maaike van Putten, Rob Percival",
+                    "cover": "javascript-from-beginning-to-professional-laurence-lars-svekis-maaike-va-putten-rob-percival.jpg"
+                },
+                {
+                    "header": "The Road To React (2023)",
+                    "sub-header": "Robin Wieruch",
+                    "cover": "the-road-to-react-robin-wieruch.jpg"
+                },
+                {
+                    "header": "Learning TypeScript 4th Edition (2022)",
+                    "sub-header": "Josh Goldberg",
+                    "cover": "learning-typescript-4e-josh-goldberg.jpg"
+                },
+                {
+                    "header": "Mastering TypeScript 4th Edition (2021)",
+                    "sub-header": "Nathan Rozentals",
+                    "cover": "mastering-typescript-4e-nathan-rozentals.jpg"
+                },
+                {
+                    "header": "Head First Java 3rd Edition (2022)",
+                    "sub-header": "Kathy Sierra, Bert, Gates, Trisha Gee",
+                    "cover": "head-first-java-3e-kathy-sierra-bert-gates-trisha-gee.jpg"
+                },
+                {
+                    "header": "Modern Full-Stack Development (2020)",
+                    "sub-header": "Frank Zammetti",
+                    "cover": "modern-full-stack-development-frank-zammetti.jpg"
+                }
+            ],
+            "current-project": {
+                "name": "Resume Website",
+                "description": "Updating the site by adding animations and transitions for a modern feel.",
+                "image": "building-cone-construction.svg",
+                "github-url": "https://github.com/Phyotic/ResumeSite",
+                "site-url": "",
+                "tech-used": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "TypeScript",
+                    "React",
+                    "React Router"
+                ]
+            }
+        },
+        "certifications": [
+            {
+                "header": "AWS Cloud Practitioner",
+                "sub-header": "Amazon Web Services",
+                "cover": "aws-certified-cloud-practitioner-certificate.PNG"
+            },
+            {
+                "header": "Meta Front End Developer",
+                "sub-header": "Meta Partnered With Coursera",
+                "cover": "coursera-meta-front-end-developer.PNG"
+            },
+            {
+                "header": "AWS Cloud Solutions Architect",
+                "sub-header": "Amazon Web Services Partnered With Coursera",
+                "cover": "coursera-aws-cloud-solutions-architect.PNG"
+            }
+        ],
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "React Router",
+            "AWS",
+            "Java",
+            "SQL",
+            "MySQL",
+            "XML",
+            "Formik",
+            "Material-UI",
+            "Bootstrap",
+            "JUnit",
+            "React Testing Library",
+            "Dom Testing Library",
+            "Axios",
+            "Maven",
+            "Git",
+            "GitHub",
+            "JSON",
+            "AJAX"
+        ],
+        "links": [
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/daniel-solorzano-953a3817a/"
+            },
+            {
+                "name": "GitHub",
+                "url": "https://github.com/Phyotic"
+            },
+            {
+                "name": "LeetCode",
+                "url": "https://leetcode.com/u/Phyotic/"
+            }
+        ]
+    },
+    "updated": "Nov. 3, 2024"
+}
