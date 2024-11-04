@@ -19,9 +19,17 @@ nav {
 
     font-weight: 300;
     color: var(--color-2);
-    border-left: 1px solid var(--color-);
+    border-left: 1px solid var(--color-2);
     border-right: 1px solid var(--color-2);
     border-bottom: 1px solid var(--color-2);
+}
+
+.nav-menu li:hover {
+    color: var(--color-4);
+    background-color: var(--color-2);
+    border-left-color: var(--color-4);
+    border-right-color: var(--color-4);
+    border-bottom-color: var(--color-4);
 }
 
 .rr-link {
