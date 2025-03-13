@@ -170,17 +170,17 @@
             {
                 "header": "Google IT Automation With Python",
                 "sub-header": "Google Partnered With Coursera",
-                "cover": "coursera-google-it-automation-with-python.PNG"
+                "cover": "coursera-google-it-automation-with-python.png"
             },
             {
                 "header": "Spring Framework",
                 "sub-header": "LearnQuest Partnered With Coursera",
-                "cover": "coursera-learnquest-spring-framework.PNG"
+                "cover": "coursera-learnquest-spring-framework.png"
             },
             {
                 "header": "Amazon Junior Software Developer",
                 "sub-header": "Amazon Partnered With Coursera",
-                "cover": "coursera-amazon-junior-software-developer.PNG"
+                "cover": "coursera-amazon-junior-software-developer.png"
             }
         ],
         "skills": [
