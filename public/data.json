@@ -166,6 +166,21 @@
                 "header": "AWS Cloud Solutions Architect",
                 "sub-header": "Amazon Web Services Partnered With Coursera",
                 "cover": "coursera-aws-cloud-solutions-architect.PNG"
+            },
+            {
+                "header": "Google IT Automation With Python",
+                "sub-header": "Google Partnered With Coursera",
+                "cover": "coursera-google-it-automation-with-python.PNG"
+            },
+            {
+                "header": "Spring Framework",
+                "sub-header": "LearnQuest Partnered With Coursera",
+                "cover": "coursera-learnquest-spring-framework.PNG"
+            },
+            {
+                "header": "Amazon Junior Software Developer",
+                "sub-header": "Amazon Partnered With Coursera",
+                "cover": "coursera-amazon-junior-software-developer.PNG"
             }
         ],
         "skills": [
@@ -177,6 +192,9 @@
             "React Router",
             "AWS",
             "Java",
+            "Python",
+            "Spring",
+            "Spring Boot",
             "SQL",
             "MySQL",
             "XML",
@@ -208,5 +226,5 @@
             }
         ]
     },
-    "updated": "Nov. 3, 2024"
+    "updated": "March, 12, 2025"
 }
